@@ -21,7 +21,12 @@ return array(
     ),
     'service_manager' => array(
         'factories' => array(
-            'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\
-   AdapterServiceFactory',
+            'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
         ),
-    ), );
+    ),
+    'view_manager' => array(
+        'strategies' => array(
+            'ViewJsonStrategy',
+        ),
+    ),
+);
